@@ -6,8 +6,6 @@ from urllib import request
 from re import findall as find
 from threading import Thread as thread
 
-#PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
-#PROJECT_UI = os.path.join(PROJECT_PATH, "newproject")
 
 class whoami:
 
@@ -86,8 +84,8 @@ class whoami:
             textBoxes = [self.hostname_disp, self.curIP, self.visIP]
             sections = [hostName, hostIP, str(visIP[0])]                      
 
-            pos = 0
-            for box in textBoxes:
+            pos = 0  # This represents the position of the sections list
+            for box in textBoxes: 
                 box.config(state='normal')
                 box.delete('1.0', 'end')
                 box.insert('0.0', sections[pos])
