@@ -1,4 +1,3 @@
-import os
 import tkinter as tk
 import tkinter.ttk as ttk
 import pygubu
